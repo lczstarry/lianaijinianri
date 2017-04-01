@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/jbshape">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/zmtextView2"
+        android:layout_alignLeft="@+id/zmtextView2"
+        android:layout_alignStart="@+id/zmtextView2"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:textSize="70sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/zimagebutton4"
+        android:layout_alignStart="@+id/zimagebutton4" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/button2"
+        android:onClick="log2"
+        android:background="@drawable/yjshape2"
+     android:src="@mipmap/ic_search_white_48dp"
+
+        android:layout_alignTop="@+id/imagebutton6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(格式：xxxx-xx-xx)"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="是我们相爱"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="35sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="天纪念日"
+        android:id="@+id/textView6"
+        android:textSize="35sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4"
+        android:textColor="#ffffff" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/ic_chevron_left_white_36dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(格式：xxxx-xx-xx)"
+        android:id="@+id/zmtextView2"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView11"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="从"
+        android:id="@+id/ztextView12"
+        android:textSize="35sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zimageView3"
+        android:src="@mipmap/ic_chevron_right_white_36dp"
+
+        android:layout_above="@+id/zimagebutton3"
+        android:layout_toRightOf="@+id/ztextView12"
+        android:layout_toEndOf="@+id/ztextView12" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/zmeditText4"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/zimageView3"
+        android:layout_toEndOf="@+id/zimageView3" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/zimagebutton3"
+        android:background="@drawable/yjshape2"
+        android:src="@mipmap/ic_save_white_48dp"
+        android:onClick="savein"
+
+        android:layout_below="@+id/zmeditText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_delete_white_48dp"
+        android:id="@+id/zimagebutton4"
+        android:background="@drawable/yjshape2"
+        android:textSize="25sp"
+        android:onClick="saveout"
+
+        android:layout_below="@+id/zmeditText4"
+        android:layout_alignLeft="@+id/zmeditText4"
+        android:layout_alignStart="@+id/zmeditText4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="至"
+        android:id="@+id/textView11"
+        android:textSize="35sp"
+        android:layout_below="@+id/zimagebutton4"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagebutton6"
+        android:src="@mipmap/ic_arrow_forward_white_48dp"
+        android:background="@drawable/yjshape2"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginBottom="48dp" />
+
+
+</RelativeLayout>

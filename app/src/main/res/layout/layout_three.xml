@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/jbshape"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aimagebutton6"
+            android:src="@mipmap/ic_arrow_forward_white_48dp"
+            android:background="@drawable/yjshape2"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="距离"
+            android:id="@+id/aytextView12"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/yimagebutton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(格式：xxxx-xx-xx)"
+        android:id="@+id/atextView2"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/aymeditText4"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/ymtextView2"
+            android:layout_toEndOf="@+id/ayimageView3"
+            android:layout_toRightOf="@+id/ayimageView3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ayimageView3"
+            android:src="@mipmap/ic_chevron_right_white_36dp"
+            android:layout_alignBottom="@+id/ymeditText4"
+         />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/aayimagebutton3"
+            android:background="@drawable/yjshape2"
+            android:src="@mipmap/ic_save_white_48dp"
+            android:onClick="savein"
+
+            android:layout_below="@+id/yimageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="    "
+            android:id="@+id/aatextView18" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/aayimagebutton4"
+            android:background="@drawable/yjshape2"
+            android:src="@mipmap/ic_delete_white_48dp"
+            android:onClick="saveout"
+
+            android:layout_below="@+id/yimageView3"
+            android:layout_toRightOf="@+id/yimageView3"
+            android:layout_toEndOf="@+id/yimageView3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.47">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/aaymeditText4"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@+id/aimageView4"
+            android:layout_toRightOf="@+id/aimageView4"
+            android:layout_alignParentBottom="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/ic_chevron_right_white_36dp"
+
+            android:id="@+id/aimageView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="（纪念日名称）"
+            android:id="@+id/aatextView2"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/aaymeditText4"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/ayimagebutton3"
+            android:background="@drawable/yjshape2"
+            android:src="@mipmap/ic_save_white_48dp"
+            android:onClick="asavein"
+
+            android:layout_below="@+id/ayimageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="    "
+            android:id="@+id/atextView18" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/ayimagebutton4"
+            android:background="@drawable/yjshape2"
+            android:src="@mipmap/ic_delete_white_48dp"
+            android:onClick="asaveout"
+
+            android:layout_below="@+id/ayimageView3"
+            android:layout_toRightOf="@+id/ayimageView3"
+            android:layout_toEndOf="@+id/ayimageView3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="还有"
+        android:id="@+id/aaytextView12"
+        android:textSize="35sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/ayimagebutton3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="129dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/atextView4"
+            android:textSize="100sp"
+            android:textColor="#ffffff"
+            android:text="00"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="天"
+        android:id="@+id/atextView17"
+        android:layout_gravity="right"
+        android:textSize="35sp"/>
+
+</LinearLayout>
